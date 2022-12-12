@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports={
-    db: process.env.MONGODB_URI
+    db: 'mongodb+srv://Celesta2023:celestadata23@cluster0.l2nxsb7.mongodb.net/?retryWrites=true&w=majority'
 }

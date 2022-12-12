@@ -12,8 +12,6 @@ const eventSchema = new Schema({
     },
     img: {
         type: String,
-        enum: ['sel','reg','none'],
-        default: 'sel'
     },
     date: {
         type: String,
@@ -27,10 +25,12 @@ const eventSchema = new Schema({
     tag : {
         type: String
     },
-}, {
+},
+{collection: 'events'},
+ {
     timestamps: true
 });
 
 
-const Event = mongoose.model("event", eventSchema);
+const Event = mongoose.model("events", eventSchema);
 module.exports = Event;
